@@ -1,7 +1,7 @@
 const subHeaders = [
-    "VENTURE CAPITAL AND ENTERPRISE",
-    "ABOUT MY WORK",
     "ENGINEERING, DESIGN, R&D",
+    "ABOUT MY WORK",
+    "VENTURE CAPITAL AND ENTERPRISE",
     "GET IN TOUCH"
 ];
 
@@ -15,7 +15,7 @@ function changeColors() {
 }
 
 function revertColors() {
-    gsap.to('.container', { backgroundColor: "#e3e3e3", duration: 0.5 });
+    gsap.to('.container', { backgroundColor: "#c7c5c5", duration: 0.5 });
     gsap.to('.placeholder, nav, footer, p', { color: "#000", duration: 0.5 });
 }
 
@@ -97,7 +97,7 @@ function updatePlaceholderText(event) {
 }
 
 function resetPlaceholderText() {
-    const defaultSubHeaderText = "LABORATORIES";
+    const defaultSubHeaderText = "TECHNOLOGIES";
     const defaultText = "PARASAR";
 
     subheader.textContent = defaultSubHeaderText;

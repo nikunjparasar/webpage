@@ -15,28 +15,28 @@ html, body {
 
 @font-face {
     font-family: 'quicksand';
-    src: url('./quicksand.otf') format('truetype');
+    src: url('./fonts/quicksand.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: '911';
-    src: url('./911.ttf') format('truetype');
+    src: url('./fonts/911.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SF';
-    src: url('./SF.otf') format('truetype');
+    src: url('./fonts/SF.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Torwelten';
-    src: url('./TorweltenMono.ttf') format('truetype');
+    src: url('./fonts/TorweltenMono.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -46,7 +46,7 @@ html, body {
     height: 100%;
     font-family: "911";
     text-transform: uppercase;
-    background: #e3e3e3;
+    background: #c7c5c5;
     font-size: 20px;
 }
 
