@@ -10,12 +10,12 @@ const placeholder = document.querySelector(".placeholder");
 const subheader = document.querySelector(".subheader");
 
 function changeColors() {
-    gsap.to('.container', { backgroundColor: "#6b6b6b", duration: 0.5 });
+    gsap.to('.container', { backgroundColor: "#000", duration: 0.5 });
     gsap.to('.placeholder, nav, footer, p', {  color: '#fff',duration: 0.5 });
 }
 
 function revertColors() {
-    gsap.to('.container', { backgroundColor: "#c7c5c5", duration: 0.5 });
+    gsap.to('.container', { backgroundColor: "#fff", duration: 0.5 });
     gsap.to('.placeholder, nav, footer, p', { color: "#000", duration: 0.5 });
 }
 
@@ -47,7 +47,7 @@ function animateBlurEffect() {
             gsap.to(letters[index], { filter: 'blur(0px)', duration: 0.25 });
             index++;
             if (index < letters.length) {
-                setTimeout(clearNextLetter, 50);
+                setTimeout(clearNextLetter, 20);
             }
         }
     }
@@ -83,7 +83,7 @@ function shuffleLetters(finalText) {
             clearInterval(intervalHandles[i]);
         }
         animateBlurEffect();
-    }, 500);
+    }, 400);
 }
 
 function updatePlaceholderText(event) {
@@ -97,7 +97,7 @@ function updatePlaceholderText(event) {
 }
 
 function resetPlaceholderText() {
-    const defaultSubHeaderText = "TECHNOLOGIES";
+    const defaultSubHeaderText = "LABORATORIES";
     const defaultText = "PARASAR";
 
     subheader.textContent = defaultSubHeaderText;
